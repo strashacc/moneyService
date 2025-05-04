@@ -13,7 +13,7 @@
 
 Клонируйте гитхаб репозиторий на свое устройство
 ```
-git clone github.com/strashacc/finance_manager
+git clone github.com/strashacc/moneyService
 ```
 
 Перейдите в папку с исходным кодом
