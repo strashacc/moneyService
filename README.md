@@ -11,19 +11,34 @@
 
 ## Установка
 
-Для начала установите требуемые модули для запуска программы
-```
-pip install django
-```
-
-Далее клонируйте гитхаб репозиторий на свое устройство
+Клонируйте гитхаб репозиторий на свое устройство
 ```
 git clone github.com/strashacc/finance_manager
 ```
 
 Перейдите в папку с исходным кодом
 ```
-cd finance_manager
+cd moneyService
+```
+
+Далее установите требуемые модули для запуска программы
+```
+python -m venv venv
+source venv/bin/activate
+```
+
+```
+pip install django
+```
+
+Примените миграции базы данных
+```
+python manage.py migrate
+```
+
+Загрузите начальные данные (необязательно)
+```
+python manage.py loaddata data.json
 ```
 
 Запустите веб-сервис
