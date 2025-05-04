@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/common.css">
+    <link rel="stylesheet" href="/static/css/recordForm.css">
+    <title>Форма</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="/finance">Домой</a>
+            <a href="/finance/recordForm/">Добавить запись</a>
+            <a href="/finance/catalogs/">Справочники</a>
+        </nav>
+    </header>
+    <main>
+        <section id="title-section">
+            {% if id %}
+                <p id="id" hidden>{{ id }}</p>
+            {% endif %}
+        </section>
+        <section id="filter-section">
+            <!-- Set status/type/category/sub-category -->
+            <label for="status">Статус: </label>
+            <select name="status" id="status">
+            </select>
+            <label for="type">Тип: </label>
+            <select name="type" id="type" required>
+            </select>
+            <label for="category">Категория: </label>
+            <select name="category" id="category" required>
+            </select>
+            <label for="sub-category">Подкатегория: </label>
+            <select name="sub-category" id="sub-category" required>
+            </select>
+
+            <label for="amount">Количество: </label>
+            <input type="number" id="amount" name="amout" required>
+            <label for="comment">Комментарий</label>
+            <input type="text" id="comment" name="comment">
+
+            <button id="save-button">Сохранить</button>
+        </section>
+    </main>
+    <footer></footer>
+    <script src="/static/js/common.js"></script>
+    <script src="/static/js/recordForm.js"></script>
+</body>
+</html>

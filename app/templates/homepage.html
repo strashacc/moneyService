@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/common.css">
+    <link rel="stylesheet" href="/static/css/homepage.css">
+    <title>ДДС</title>
+</head>
+<body>
+    <header>
+        <!-- TODO: transfer reusable segments into a separate template -->
+        <nav>
+            <a href="/finance">Домой</a>
+            <a href="/finance/recordForm/">Добавить запись</a>
+            <a href="/finance/catalogs/">Справочники</a>
+        </nav>
+    </header>
+    <main>
+        <section id="filter-section">
+            <!-- Date Filter -->
+            <label for="from">От: </label>
+            <input type="date" name="from" id="from">
+            <label for="to">До: </label>
+            <input type="date" name="to" id="to">
+
+            <!-- Filter by status/type/category/sub-category -->
+            <label for="status">Статус: </label>
+            <select name="status" id="status">
+                <option value="any">Любой</option>
+            </select>
+            <label for="type">Тип: </label>
+            <select name="type" id="type">
+                <option value="any">Любой</option>
+            </select>
+            <label for="category">Категория: </label>
+            <select name="category" id="category">
+                <option value="any">Любой</option>
+            </select>
+            <label for="sub-category">Подкатегория: </label>
+            <select name="sub-category" id="sub-category">
+                <option value="any">Любой</option>
+            </select>
+            
+            <!-- sort by date/amount -->
+            <label for="sort">Сортировать: </label>
+            <select name="sort" id="sort">
+                <option value="date_created">Дата создания</option>
+                <option value="amount">Сумма</option>
+            </select>
+            <label for="order">Порядок: </label>
+            <select name="order" id="order">
+                <option value="-1">Убывание</option>
+                <option value="1">Возрастание</option>
+            </select>
+            <button id="apply-filter">Применить</button>
+        </section>
+        <section id="table-section">
+
+        </section>
+    </main>
+    <footer></footer>
+    <script src="/static/js/common.js"></script>
+    <script src="/static/js/homepage.js"></script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+[
+    {
+        "model": "app.status",
+        "pk": "Бизнес",
+        "fields": {}
+    },
+    {
+        "model": "app.status",
+        "pk": "Личное",
+        "fields": {}
+    },
+    {
+        "model": "app.status",
+        "pk": "Налог",
+        "fields": {}
+    },
+    {
+        "model": "app.type",
+        "pk": "Пополнение",
+        "fields": {}
+    },
+    {
+        "model": "app.type",
+        "pk": "Списание",
+        "fields": {}
+    },
+    {
+        "model": "app.category",
+        "pk": "Инфраструктура",
+        "fields": {
+            "type": "Пополнение"
+        }
+    },
+    {
+        "model": "app.category",
+        "pk": "Маркетинг",
+        "fields": {
+            "type": "Списание"
+        }
+    },
+    {
+        "model": "app.subcategory",
+        "pk": "Avito",
+        "fields": {
+            "parent": "Маркетинг"
+        }
+    },
+    {
+        "model": "app.subcategory",
+        "pk": "Farpost",
+        "fields": {
+            "parent": "Маркетинг"
+        }
+    },
+    {
+        "model": "app.subcategory",
+        "pk": "Proxy",
+        "fields": {
+            "parent": "Инфраструктура"
+        }
+    },
+    {
+        "model": "app.subcategory",
+        "pk": "VPS",
+        "fields": {
+            "parent": "Инфраструктура"
+        }
+    }
+]

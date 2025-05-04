@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/common.css">
+    <title>Управление справочниками</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="/finance">Домой</a>
+            <a href="/finance/recordForm/">Добавить запись</a>
+            <a href="/finance/catalogs/">Справочники</a>
+        </nav>
+    </header>
+    <main>
+        <section id="filter-section">
+            <label for="catalog">Справочник: </label>
+            <select name="catalog" id="catalog">
+                <option value="status">Статус</option>
+                <option value="type">Тип</option>
+                <option value="category">Категория</option>
+                <option value="sub_category">Подкатегория</option>
+            </select>
+            <label for="name">Название: </label>
+            <input type="text" id="name" name="name" required>
+            <button id="save-button">Сохранить</button>
+        </section>
+        <section id="table-section">
+
+        </section>
+    </main>
+    <footer></footer>
+    <script src="/static/js/common.js"></script>
+    <script src="/static/js/catalogs.js"></script>
+</body>
+</html>

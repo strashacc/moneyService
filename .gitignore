@@ -1,0 +1,8 @@
+db.sqlite3
+*/__pycache__/
+*.pot
+*.pyc
+db.sqlite3
+*.sqlite3
+*.log
+.vscode/
